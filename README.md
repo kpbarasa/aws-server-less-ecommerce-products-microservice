@@ -36,11 +36,11 @@
 - `Product Service Stack:` Main stack 
    - `productService`
       - API Endpoints: 
-         `product`         Provide functionalities for managing products, including creating, updating, deletin retrieving product information.
-         `category `       Manage product categories or hierarchies to help organize and classify products
-         `coupons `        Create and configure various types of coupons or discounts.
-         `uploader `       ImageService
-         `products-queue ` Trigger events or tasks in an AWS Simple Queue Service (SQS) or similar service.
+        - `product`         Provide functionalities for managing products, including creating, updating, deletin retrieving product information.
+        - `category `       Manage product categories or hierarchies to help organize and classify products
+        - `coupons `        Create and configure various types of coupons or discounts.
+        - `uploader `       ImageService
+        - `products-queue ` Trigger events or tasks in an AWS Simple Queue Service (SQS) or similar service.
   
 
 - `S3 Bucket Stack`  S3 Bucket Stack
