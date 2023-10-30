@@ -28,34 +28,34 @@
 ### API Gateway
 - `Product Service Stack:`  
    - `productService`
-      API Endpoints: "".
-      HTTP Integration: 
-      Request and Response Mapping.
-      Security.
+      - API Endpoints: "".
+      - HTTP Integration: 
+      - Request and Response Mapping.
+      - Security.
 
    - `categoryService`
-      API Endpoints: "".
-      HTTP Integration: 
-      Request and Response Mapping.
-      Security.
+      - API Endpoints: "".
+      - HTTP Integration: 
+      - Request and Response Mapping.
+      - Security.
 
-   - `couponsService`     
-      API Endpoints: "".
-      HTTP Integration: 
-      Request and Response Mapping.
-      Security.
+   - `couponsService`    
+      - API Endpoints: "".
+      - HTTP Integration: 
+      - Request and Response Mapping.
+      - Security.
 
    - `imageService`
-      API Endpoints: "".
-      HTTP Integration: 
-      Request and Response Mapping.
-      Security.
+      - API Endpoints: "".
+      - HTTP Integration: 
+      - Request and Response Mapping.
+      - Security.
 
    - `queueService`
-      API Endpoints: "Trigger events or tasks in an AWS Simple Queue Service (SQS) or similar service".
-      HTTP Integration: 
-      Request and Response Mapping.
-      Security.
+      - API Endpoints: "Trigger events or tasks in an AWS Simple Queue Service (SQS) or similar service".
+      - HTTP Integration: 
+      - Request and Response Mapping.
+      - Security.
 
    - `S3 Bucket Stack`  
       This property enables the backend to retrieve a list of orders based on various parameters such as order status, customer ID, date, and more.
