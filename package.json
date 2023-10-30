@@ -9,6 +9,9 @@
     "watch": "tsc -w",
     "test": "jest",
     "cdk": "cdk",
+    "deploy": "cdk deploy",
+    "destroy": "cdk destroy",
+    "aws": "aws configure",
     "dev": "cdk synth && sam local start-api -t cdk.out/ProductsMicroserviceStack.template.json"
   },
   "devDependencies": {
@@ -27,7 +30,7 @@
     "@middy/core": "^4.6.2",
     "@middy/http-json-body-parser": "^4.6.2",
     "aws-cdk-lib": "2.96.2",
-    "aws-sdk": "^2.1459.0",
+    "aws-sdk": "^2.1461.0",
     "class-transformer": "^0.5.1",
     "class-validator": "^0.14.0",
     "constructs": "^10.2.70",
