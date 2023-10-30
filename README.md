@@ -27,33 +27,67 @@
 
 ### API Gateway
 
-- `get orders`
-- `get transactions`
+- `productService`
+   Product Management: This service should provide functionalities for managing products, including creating, updating, deleting, and retrieving product information.
+   Inventory Management: It should keep track of product stock levels and handle inventory updates as products are bought and restocked. 
+   Pricing and Discount: The service should handle pricing information for products, as well as apply discounts and promotions if necessary.
+   Product Search: It should support product search and filtering, allowing users to find products easily.
+   Product Analytics: This service can provide data on product performance, such as sales, views, and customer reviews.
+
+- `categoryService`
+   Category Management: This service should manage product categories or hierarchies to help organize and classify products.
+   Category Navigation: It should enable users to navigate and filter products by categories, making it easier to find what they are looking for.
+   Category Analytics: This service can provide insights into category popularity and product distribution within categories.
+
+- `couponsService`
+   Coupon Creation: This service should allow administrators to create and configure various types of coupons or discounts.
+   Coupon Validation: It should validate coupons during the checkout process to apply discounts accurately.
+   Coupon Expiry: Manage coupon expiry dates and enforce their usage within the specified timeframe.
+   Coupon Usage Tracking: Keep track of how often coupons are used, providing insights for marketing and promotion strategies.
+
+- `imageService`
+   Image Storage: This service should handle image storage and retrieval for product images and other visual assets.
+   Image Processing: It can provide functionalities for resizing, cropping, and optimizing images for efficient display on the e-commerce platform.
+   Image Metadata: Store metadata about images, such as captions, alt text, and tags, to enhance accessibility and searchability.
+
+- `queueService`
+   Background Processing: This service is used for offloading time-consuming or asynchronous tasks, such as order processing, email notifications, and data updates.
+   Task Queue: Manage a queue of tasks, ensuring they are executed in the desired order and with scalability in mind.
+   Error Handling: Handle errors and retries for failed tasks to maintain system reliability.
+   Monitoring and Metrics: Collect data on queue performance, task execution times, and system resource usage.
 
 ### ENV
 
 - SNS_TOPIC=order_consume-Topic
 - SNS_TOPIC_ARN=customer-topic
 
-### Handlers
+### Stacks
 
-- `Create orders`  
-   This property allows the backend to create new orders when customers make purchases on the frontend.It should support features like adding products to the order, specifying quantities, calculating prices, and handling the order's state (e.g., pending, processing, shipped).
+- `Product Service Stack:`  
+   - `productService`
+      This property enables the backend to retrieve a list of orders based on various parameters such as order status, customer ID, date, and more.
+      It is essential for store administrators and customers to view and manage their orders.
 
-- `Get orders`  
-   This property enables the backend to retrieve a list of orders based on various parameters such as order status, customer ID, date, and more.
-   It is essential for store administrators and customers to view and manage their orders.
+   - `categoryService`
+      This property enables the backend to retrieve a list of orders based on various parameters such as order status, customer ID, date, and more.
+      It is essential for store administrators and customers to view and manage their orders.
 
-- `Get order`
-   This feature allows the backend to retrieve detailed information about a specific order. This can include the list of products in the order, order status, customer details, and transaction information.
+   - `couponsService`
+      This property enables the backend to retrieve a list of orders based on various parameters such as order status, customer ID, date, and more.
+      It is essential for store administrators and customers to view and manage their orders.
 
-- `Get tranactions`
-   This property enables the backend to fetch transaction records associated with orders.
-   It's crucial for tracking payment information, such as payment method, transaction ID, and transaction status.
+   - `imageService`
+      This property enables the backend to retrieve a list of orders based on various parameters such as order status, customer ID, date, and more.
+      It is essential for store administrators and customers to view and manage their orders.
 
-- `db-connections`
-   Maintaining efficient and secure database connections is a critical property for an e-commerce backend.
-   It should include features like connection pooling to manage database connections efficiently and securely, as well as handling  database queries and data retrieval.
+   - `queueService`
+      This property enables the backend to retrieve a list of orders based on various parameters such as order status, customer ID, date, and more.
+      It is essential for store administrators and customers to view and manage their orders.
+
+   - `S3 Bucket Stack`  
+      This property enables the backend to retrieve a list of orders based on various parameters such as order status, customer ID, date, and more.
+      It is essential for store administrators and customers to view and manage their orders.
+
 
 ### Utilities
 
