@@ -108,15 +108,15 @@
     - `Product Analytics`: This service can provide data on product performance, such as sales, views, and customer reviews.
 
 - Category Service:
-    - Category Management: This service should manage product categories or hierarchies to help organize and classify products.
-    - Category Navigation: It should enable users to navigate and filter products by categories, making it easier to find what they are looking for.
-    - Category Analytics: This service can provide insights into category popularity and product distribution within categories.
+    - `Category Management`: This service should manage product categories or hierarchies to help organize and classify products.
+    - `Category Navigation`: It should enable users to navigate and filter products by categories, making it easier to find what they are looking for.
+    - `Category Analytics`: This service can provide insights into category popularity and product distribution within categories.
 
 - Coupons Service:
-    - Coupon Creation: This service should allow administrators to create and configure various types of coupons or discounts.
-    - Coupon Validation: It should validate coupons during the checkout process to apply discounts accurately.
-    - Coupon Expiry: Manage coupon expiry dates and enforce their usage within the specified timeframe.
-    - Coupon Usage Tracking: Keep track of how often coupons are used, providing insights for marketing and promotion strategies
+    - `Coupon Creation`: This service should allow administrators to create and configure various types of coupons or discounts.
+    - `Coupon Validation`: It should validate coupons during the checkout process to apply discounts accurately.
+    - `Coupon Expiry`: Manage coupon expiry dates and enforce their usage within the specified timeframe.
+    - `Coupon Usage Tracking`: Keep track of how often coupons are used, providing insights for marketing and promotion strategies
 
 - Image Service:
     - grab the fileName from queryString
@@ -152,6 +152,6 @@
 - coupons,
 
 ####   -Utilities
-- `Database client (sql)` Dynamo DB
+- Database client (sql) Dynamo DB
 
 
