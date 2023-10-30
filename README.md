@@ -127,6 +127,31 @@
 
 - Queue Service: Get product from product repository
 
-### Utilities
 
+### SRC(Main files)
+####   -API
+- products,
+- Category,
+- coupons,
+- message-queue,
+- image-api
+
+####   -Services
+- products,
+- Category,
+- coupons,
+
+####   -Repositories
+- products,
+- Category,
+- coupons,
+
+####   -Models
+- products,
+- Category,
+- coupons,
+
+####   -Utilities
 - `Database client (sql)` Dynamo DB
+
+
