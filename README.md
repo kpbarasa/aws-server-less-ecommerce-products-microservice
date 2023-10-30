@@ -1,7 +1,7 @@
 # CDK TypeScript project: aws-server-less-ecommerce-products-microservice
 * node js
 * Docker
-* AWS serverles
+* AWS CDK
 
 ## Useful commands
 
@@ -23,11 +23,6 @@
 - `SQS`
 - `Dynamo DB`
 - `S3 bucket`
-
-### ENV
-
-- SNS_TOPIC=order_consume-Topic
-- SNS_TOPIC_ARN=customer-topic
 
 ### Stacks
 
