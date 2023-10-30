@@ -68,11 +68,11 @@
 
 ### Stacks
 - `productService`
-   Product Management: This service should provide functionalities for managing products, including creating, updating, deleting, and retrieving product information.
-   Inventory Management: It should keep track of product stock levels and handle inventory updates as products are bought and restocked. 
-   Pricing and Discount: The service should handle pricing information for products, as well as apply discounts and promotions if necessary.
-   Product Search: It should support product search and filtering, allowing users to find products easily.
-   Product Analytics: This service can provide data on product performance, such as sales, views, and customer reviews.
+   - Product Management: This service should provide functionalities for managing products, including creating, updating, deletin and retrieving product information.
+   - Inventory Management: It should keep track of product stock levels and handle inventory updates as products are bought and restocked. 
+   - Pricing and Discount: The service should handle pricing information for products, as well as apply discounts and promotions if necessary.
+   - Product Search: It should support product search and filtering, allowing users to find products easily.
+   - Product Analytics: This service can provide data on product performance, such as sales, views, and customer reviews.
 
 - `categoryService`
    Category Management: This service should manage product categories or hierarchies to help organize and classify products.
