@@ -37,67 +37,67 @@
     - `product`         Provide functionalities for managing products, including creating, updating, deletin retrieving product information.
         - Create
             - url: `product/`
-            - method: POST
+            - method: `POST`
         - Update
             - url: `product/`
-            - method: PUT
+            - method: `PUT`
         - Find
             - url: `product/`
             - url: `product/id`
-            - method: GET
-        - Delete  
+            - method: `GET`
+        - `DELETE`  
             - url: `product/id`
-            - method: DELETE
+            - method: `DELETE`
 
     - `category`       Manage product categories or hierarchies to help organize and classify products
         - Create
             - url: `category`
-            - method: POST
+            - method: `POST`
         - Update
             - url: `category`
-            - method: PUT
+            - method: `PUT`
         - Find
             - url: `category`
             - url: `category/id`
-            - method: GET
-        - Delete  
-            - url: `delete/id`
-            - method: DELETE
+            - method: `GET`
+        - `DELETE`  
+            - url: ``DELETE`/id`
+            - method: `DELETE`
 
     - `coupons`        Create and configure various types of coupons or discounts.
         - Create
             - url: `coupons/`
-            - method: POST
+            - method: `POST`
         - Update
             - url: `coupons/id`
-            - method: PUT
+            - method: `PUT`
         - Find
             - url: `coupons/id`
             - url: `coupons/id`
-            - method: GET
-        - Delete  
+            - method: `GET`
+        - `DELETE`  
             - url: `coupons/id`
-            - method: DELETE
+            - method: `DELETE`
 
     - `uploader`       ImageService
         - Create
             - url: `product/img`
-            - method: POST
+            - method: `POST`
         - Find
             - url: `aws signed url`
-            - method: GET
+            - method: `GET`
 
     - `products-queue` Trigger events or tasks in an AWS Simple Queue Service (SQS) or similar service.
         - url: ``
-        - method: POST
+        - method: `POST`
   
 
 ##### 2 S3 Bucket Stack  
-- grab the fileName from queryString
-- give unique name of that file
-- create S3Params
-- get Signed URL
-- give to back to client for upload image
+- Grab the fileName from queryString
+- Give unique name of that file
+- Create S3Params
+- Get Signed URL
+- Give to back to client for upload image
 
 ##### 3 service stack
 - Products Service:
@@ -122,10 +122,10 @@
     - grab the fileName from queryString
     - give unique name of that file
     - create S3Params
-    - get Signed URL
+    - `GET` Signed URL
     - give to back to client for upload image
 
-- Queue Service: Get product from product repository
+- Queue Service: `GET` product from product repository
 
 
 ### SRC(Main files)
