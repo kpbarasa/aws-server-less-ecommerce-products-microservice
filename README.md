@@ -26,7 +26,7 @@
 
 ### Stacks
 
-#### 1 Product Service Stack: Main Stack
+#### 1. Product Service Stack: Main Stack
 ##### 1.1  productService
 - API Endpoints: 
     - `product`         Provide functionalities for managing products, including creating, updating, deletin retrieving product information.
@@ -87,14 +87,14 @@
         - method: `POST`
   
 
-##### 2 S3 Bucket Stack  
+##### 2. S3 Bucket Stack  
 - Grab the fileName from queryString
 - Give unique name of that file
 - Create S3Params
 - Get Signed URL
 - Give to back to client for upload image
 
-##### 3 service stack
+##### 3. service stack
 - Products Service:
     - `Product Management`: This service should provide functionalities for managing products, including creating, updating, deleting, and retrieving product information.
     -  `Inventory Management`: It should keep track of product stock levels and handle inventory updates as products are bought and restocked.
