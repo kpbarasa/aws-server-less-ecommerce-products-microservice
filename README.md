@@ -26,7 +26,47 @@
 - `S3 bucket`
 
 ### API Gateway
+- `Product Service Stack:`  
+   - `productService`
+      API Endpoints: "".
+      HTTP Integration: 
+      Request and Response Mapping.
+      Security.
 
+   - `categoryService`
+      API Endpoints: "".
+      HTTP Integration: 
+      Request and Response Mapping.
+      Security.
+
+   - `couponsService`     
+      API Endpoints: "".
+      HTTP Integration: 
+      Request and Response Mapping.
+      Security.
+
+   - `imageService`
+      API Endpoints: "".
+      HTTP Integration: 
+      Request and Response Mapping.
+      Security.
+
+   - `queueService`
+      API Endpoints: "Trigger events or tasks in an AWS Simple Queue Service (SQS) or similar service".
+      HTTP Integration: 
+      Request and Response Mapping.
+      Security.
+
+   - `S3 Bucket Stack`  
+      This property enables the backend to retrieve a list of orders based on various parameters such as order status, customer ID, date, and more.
+      It is essential for store administrators and customers to view and manage their orders.
+
+### ENV
+
+- SNS_TOPIC=order_consume-Topic
+- SNS_TOPIC_ARN=customer-topic
+
+### Stacks
 - `productService`
    Product Management: This service should provide functionalities for managing products, including creating, updating, deleting, and retrieving product information.
    Inventory Management: It should keep track of product stock levels and handle inventory updates as products are bought and restocked. 
@@ -56,37 +96,6 @@
    Error Handling: Handle errors and retries for failed tasks to maintain system reliability.
    Monitoring and Metrics: Collect data on queue performance, task execution times, and system resource usage.
 
-### ENV
-
-- SNS_TOPIC=order_consume-Topic
-- SNS_TOPIC_ARN=customer-topic
-
-### Stacks
-
-- `Product Service Stack:`  
-   - `productService`
-      This property enables the backend to retrieve a list of orders based on various parameters such as order status, customer ID, date, and more.
-      It is essential for store administrators and customers to view and manage their orders.
-
-   - `categoryService`
-      This property enables the backend to retrieve a list of orders based on various parameters such as order status, customer ID, date, and more.
-      It is essential for store administrators and customers to view and manage their orders.
-
-   - `couponsService`
-      This property enables the backend to retrieve a list of orders based on various parameters such as order status, customer ID, date, and more.
-      It is essential for store administrators and customers to view and manage their orders.
-
-   - `imageService`
-      This property enables the backend to retrieve a list of orders based on various parameters such as order status, customer ID, date, and more.
-      It is essential for store administrators and customers to view and manage their orders.
-
-   - `queueService`
-      This property enables the backend to retrieve a list of orders based on various parameters such as order status, customer ID, date, and more.
-      It is essential for store administrators and customers to view and manage their orders.
-
-   - `S3 Bucket Stack`  
-      This property enables the backend to retrieve a list of orders based on various parameters such as order status, customer ID, date, and more.
-      It is essential for store administrators and customers to view and manage their orders.
 
 
 ### Utilities
